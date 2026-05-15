@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #ffffff;
+  background: #080f12;
+  overflow-x: hidden;
+}
+
+/* =========================
+   BACKGROUND IMAGE (VISIBLE TEXT FIX)
+========================= */
+.bg-animation {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background:
+    linear-gradient(
+      rgba(8, 15, 18, 0.75),
+      rgba(8, 15, 18, 0.9)
+    ),
+    url("portfolio_bg.png");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  animation: slowZoom 25s infinite alternate ease-in-out;
+}
+
+@keyframes slowZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.logo {
+  color: #b388ff;
+}
+
+header nav a {
+  margin-left: 28px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #b388ff;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section {
+  padding: 110px 10%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s ease;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   HOME SECTION
+========================= */
+.home h1 span,
+.typing {
+  color: #b388ff;
+}
+
+.home p {
+  color: #e0e0e0;
+  max-width: 600px;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+/* =========================
+   BUTTON LINKS (IMPORTANT FIX)
+========================= */
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.buttons a {
+  padding: 12px 30px;
+  background: #b388ff;
+  color: #12002b;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.buttons a:hover {
+  box-shadow: 0 0 18px rgba(179, 136, 255, 0.9);
+}
+
+/* =========================
+   SCROLL TEXT
+========================= */
+.scroll-down {
+  margin-top: 30px;
+  opacity: 0.8;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.bar {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.bar div {
+  height: 100%;
+  background: #b388ff;
+  border-radius: 10px;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(179, 136, 255, 0.25);
+}
+
+.project-card h3 {
+  color: #b388ff;
+}
+
+.project-card a {
+  color: #b388ff;
+  text-decoration: none;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+input,
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(179, 136, 255, 0.3);
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #cccccc;
+}
+
+button {
+  padding: 12px 30px;
+  background: #b388ff;
+  color: #12002b;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0 0 18px rgba(179, 136, 255, 0.9);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+}

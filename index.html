@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="bg-animation"></div>
+
+  <!-- Header -->
+  <header>
+    <h2 class="logo">MyPortfolio</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section home show">
+    <div class="content">
+      <h1>Hello, I'm <span>Your Name</span></h1>
+      <h3 class="typing">Web Designer</h3>
+
+      <p>
+        Passionate Web Developer crafting modern, responsive,
+        and user-friendly web experiences.
+      </p>
+
+      <div class="buttons">
+        <a href="#projects">View Projects</a>
+        <a href="#" download>Download Resume</a>
+      </div>
+
+      <div class="scroll-down">Scroll down ↓</div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate web developer focused on creating clean,
+      professional, and visually appealing web applications.
+    </p>
+
+    <div class="timeline">
+      <div>
+        <h4>Education</h4>
+        <p>B.Tech / Degree – Computer Science</p>
+      </div>
+      <div>
+        <h4>Experience</h4>
+        <p>Web Development Intern</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+      <div class="skill">
+        <span>HTML</span>
+        <div class="bar"><div style="width:90%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>CSS</span>
+        <div class="bar"><div style="width:85%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="bar"><div style="width:80%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive portfolio with animations.</p>
+        <div class="links">
+          <a href="#">Live</a> |
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Interactive Dashboard</h3>
+        <p>Charts and data visualization.</p>
+        <div class="links">
+          <a href="#">Live</a> |
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 | Built with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
